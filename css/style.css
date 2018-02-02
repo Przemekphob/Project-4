@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'GothamRoundedBold';
+  src: url("../vendor/GothamRounded-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GothamRoundedLight";
+  src: url("../vendor/GothamRounded-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GothamRoundedMedium";
+  src: url("../vendor/GothamRounded-Medium.otf") format("opentype");
+}
+
+p, a, i, li, ul, ol, h1, h2, h3, button {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 4px;
+  color: #FFF;
+}
+
+.corebutton {
+  background-color: #16a085;
+  font: 12px "GothamRoundedBold", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2%;
+  padding: 20px 30px 20px 30px;
+  margin: 20px;
+}
+
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/mainbg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.jumbotron .navi {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.jumbotron .navi__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  flex: 1;
+}
+
+.jumbotron .navi__menu li a {
+  font: 16px "GothamRoundedMedium", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.jumbotron .navi__menu li a:visited {
+  color: inherit;
+}
+
+.jumbotron .header {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.jumbotron .header h1 {
+  color: #FFF;
+  font: 36px "GothamRoundedBold", sans-serif;
+  text-transform: uppercase;
+  padding: 15px;
+  letter-spacing: 10px;
+}
+
+.jumbotron .header p {
+  font: 16px "GothamRoundedMedium", sans-serif;
+}
+
+.jumbotron .icons {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.jumbotron .icons .fa-twitter, .jumbotron .icons .fa-flickr, .jumbotron .icons .fa-dribbble {
+  color: #FFF;
+  font-size: 24px;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
