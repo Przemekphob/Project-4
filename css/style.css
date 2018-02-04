@@ -20,6 +20,14 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
   color: #FFF;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited {
+  color: #FFF;
+}
+
 .corebutton {
   background-color: #16a085;
   font: 12px "GothamRoundedBold", sans-serif;
@@ -42,7 +50,7 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
 
 .headercore p {
   padding: 35px 0 35px 0;
-  color: #9c9d9d;
+  color: #6a6a6a;
   line-height: 22px;
 }
 
@@ -185,7 +193,7 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
   display: flex;
   align-items: center;
   flex-direction: row;
-  height: 50vh;
+  padding: 120px 0 120px 0;
 }
 
 .fourth .camerainfo {
@@ -203,7 +211,7 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
 }
 
 .fourth .camerainfo p {
-  color: #9c9d9d;
+  color: #6a6a6a;
   font: 10px "GothamRoundedMedium", sans-serif;
 }
 
@@ -213,6 +221,142 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
 
 .fourth .image2 {
   flex: 1.4;
+}
+
+.fifthy {
+  margin: 0;
+  flex-direction: column;
+  background-image: url("../images/Livellobg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.fifthy__signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.fifthy__signup h1 {
+  font: 24px "GothamRoundedBold", sans-serif;
+  text-transform: uppercase;
+}
+
+.fifthy__signup .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  height: 5vh;
+}
+
+.fifthy__signup .form a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  background-color: #16a085;
+  flex: 1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.fifthy__signup .form a .fa-check {
+  font-size: 16px;
+}
+
+.fifthy__signup .form input {
+  padding: 20px;
+  text-transform: uppercase;
+  font: 16px "GothamRoundedMedium", sans-serif;
+  border: none;
+  height: 100%;
+  flex: 5;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.seventh {
+  padding-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.seventh h1 {
+  font: 20px "GothamRoundedBold", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.seventh p {
+  text-align: center;
+  font: 12px "GothamRoundedMedium", sans-serif;
+  color: #6a6a6a;
+  text-transform: uppercase;
+  padding: 16px;
+}
+
+.seventh .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  height: 5vh;
+  padding: 40px 0 120px 0;
+}
+
+.seventh .buttons .apple, .seventh .buttons .android {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+}
+
+.seventh .buttons .apple input::-webkit-input-placeholder, .seventh .buttons .apple textarea::-webkit-input-placeholder, .seventh .buttons .android input::-webkit-input-placeholder, .seventh .buttons .android textarea::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+.seventh .buttons .apple input, .seventh .buttons .android input {
+  border: none;
+  background-color: #1abc9c;
+  padding: 20px 75px 20px 25px;
+  font: 16px "GothamRoundedBold", sans-serif;
+  text-transform: uppercase;
+  color: #FFF;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  height: 100%;
+  margin: 0;
+}
+
+.seventh .buttons .apple a, .seventh .buttons .android a {
+  border: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  padding: 12px;
+  height: 100%;
+  background-color: #16a085;
+  flex: 1;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.seventh .buttons .apple a .fa-apple, .seventh .buttons .apple a .fa-android, .seventh .buttons .android a .fa-apple, .seventh .buttons .android a .fa-android {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
