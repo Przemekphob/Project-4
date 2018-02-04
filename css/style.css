@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "GothamRoundedLight";
-  src: url("../vendor/GothamRounded-Light.otf") format("opentype");
+  font-family: "GothamRoundedBook";
+  src: url("../vendor/GothamRoundedBook_21018.otf") format("opentype");
 }
 
 @font-face {
@@ -16,7 +16,7 @@
 p, a, i, li, ul, ol, h1, h2, h3, button {
   margin: 0;
   padding: 0;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   color: #FFF;
 }
 
@@ -27,10 +27,35 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
   border: none;
   border-radius: 2%;
   padding: 20px 30px 20px 30px;
-  margin: 20px;
+  margin: 20px 0 20px 0;
+}
+
+.sectionbggrey {
+  background-color: #f5f6f7;
+}
+
+.headercore h2 {
+  font: 18px "GothamRoundedBold", sans-serif;
+  color: #16a085;
+  text-transform: uppercase;
+}
+
+.headercore p {
+  padding: 35px 0 35px 0;
+  color: #9c9d9d;
+  line-height: 22px;
+}
+
+.headercore p strong {
+  color: #000;
+}
+
+.headercore button {
+  margin-bottom: 40px;
 }
 
 .jumbotron {
+  margin: 0;
   display: flex;
   flex-direction: column;
   background-image: url("../images/mainbg.png");
@@ -83,7 +108,7 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
 }
 
 .jumbotron .header p {
-  font: 16px "GothamRoundedMedium", sans-serif;
+  font: 12px "GothamRoundedMedium", sans-serif;
 }
 
 .jumbotron .icons {
@@ -97,6 +122,97 @@ p, a, i, li, ul, ol, h1, h2, h3, button {
   color: #FFF;
   font-size: 24px;
   margin: 10px;
+}
+
+.second {
+  display: flex;
+}
+
+.second__description {
+  padding-top: 120px;
+  flex: 1;
+}
+
+.second__phone {
+  padding-top: 100px;
+  flex: 1.5;
+}
+
+.third {
+  display: flex;
+  flex-direction: row;
+  padding-top: 150px;
+}
+
+.third__image {
+  flex: 1;
+}
+
+.third > .carousel {
+  flex: 0.65;
+  padding: 15px;
+}
+
+.third > .carousel .counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.third > .carousel .carousel-indicators {
+  display: none;
+}
+
+.third > .carousel .carousel-control {
+  position: absolute;
+  top: 80%;
+  font-size: 30px;
+  color: #000;
+  opacity: 1;
+  background-image: none;
+  outline: none;
+  width: 0;
+}
+
+.third > .carousel .left {
+  left: 5%;
+}
+
+.third > .carousel .right {
+  left: 10%;
+}
+
+.fourth {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 50vh;
+}
+
+.fourth .camerainfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  text-align: center;
+  padding: 60px 60px 60px 0;
+}
+
+.fourth .camerainfo h2 {
+  font: 16px "GothamRoundedBold", sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.fourth .camerainfo p {
+  color: #9c9d9d;
+  font: 10px "GothamRoundedMedium", sans-serif;
+}
+
+.fourth .image1 {
+  flex: 1.4;
+}
+
+.fourth .image2 {
+  flex: 1.4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,8 +3,8 @@
 	src: url('../vendor/GothamRounded-Bold.otf') format('opentype');
 }
 @font-face{
-    font-family: "GothamRoundedLight";
-	src: url('../vendor/GothamRounded-Light.otf') format('opentype');
+    font-family: "GothamRoundedBook";
+	src: url('../vendor/GothamRoundedBook_21018.otf') format('opentype');
 }
 @font-face{
     font-family: "GothamRoundedMedium";
@@ -14,15 +14,17 @@
 p, a, i, li, ul, ol, h1, h2, h3, button{
 	margin: 0;
 	padding: 0;
-	letter-spacing: 4px;
+	letter-spacing: 3px;
 	color: #FFF;
 }
 
-$gothamLight: 'GothamRoundedLight', sans-serif;
+$gothamBook: 'GothamRoundedBook', sans-serif;
 $gothamMedium: 'GothamRoundedMedium', sans-serif;
 $gothamBold: 'GothamRoundedBold', sans-serif;
 
 $darkCyan: #16a085;
+$lightgreybg: #f5f6f7;
+$greyfont: #9c9d9d;
 
 .corebutton {
 	background-color: $darkCyan;
@@ -31,10 +33,35 @@ $darkCyan: #16a085;
 	border: none;
 	border-radius: 2%;
 	padding: 20px 30px 20px 30px;
-	margin: 20px;
+	margin: 20px 0 20px 0;
+}
+
+.sectionbggrey {
+	background-color: $lightgreybg;
+}
+
+.headercore {
+	h2 {
+		font: 18px $gothamBold;	
+		color: $darkCyan;
+		text-transform: uppercase;
+	}
+	p {
+		padding: 35px 0 35px 0;
+		color: $greyfont;
+		line-height: 22px;
+			strong {
+				color: #000;
+			}
+	}
+	button {
+		margin-bottom: 40px;
+	}
+	
 }
 
 .jumbotron {
+	margin: 0;
 	display: flex;
 	flex-direction: column;
 	background-image: url("../images/mainbg.png");
@@ -85,7 +112,7 @@ $darkCyan: #16a085;
 		}
 
 		p {
-			font: 16px $gothamMedium;			
+			font: 12px $gothamMedium;			
 		}
 
 	}
@@ -103,6 +130,102 @@ $darkCyan: #16a085;
 
 		}
 	}
+}
 
+
+.second {
+	display: flex;
+	
+
+	&__description {
+		padding-top: 120px;
+		flex: 1;
+	}
+
+	&__phone {
+		padding-top: 100px;
+		flex: 1.5;
+	}
+}
+
+
+.third {
+	display: flex;
+	flex-direction: row;
+	padding-top: 150px;
+
+	&__image {
+		flex: 1;
+
+	}
+
+	>.carousel {
+		flex: 0.65;
+		padding: 15px;
+
+		.counter {
+			display: flex;
+			flex-direction: row;
+
+		}
+
+		.carousel-indicators {
+			display: none;
+		}
+		.carousel-control {
+			position: absolute;
+			top: 80%;
+			font-size: 30px;
+			color: #000;
+			opacity: 1;
+			background-image: none; 
+			outline: none;
+			width: 0;
+		}
+
+		.left {
+			left: 5%;
+		}
+
+		.right {
+			left: 10%;
+		}
+
+	}
+
+
+}
+
+.fourth {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	height: 50vh;
+
+	.camerainfo {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		text-align: center;
+		padding: 60px 60px 60px 0;
+
+		h2 {
+			font: 16px $gothamBold;	
+			color: #000;
+			text-transform: uppercase;
+		}
+		p {
+			color: $greyfont;
+			font: 10px $gothamMedium;
+		}
+	}
+
+	.image1 {
+		flex: 1.4;
+	}
+
+	.image2 {
+		flex: 1.4;
+	}
 
 }
