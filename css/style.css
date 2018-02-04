@@ -4,11 +4,6 @@
 }
 
 @font-face {
-  font-family: "GothamRoundedBook";
-  src: url("../vendor/GothamRoundedBook_21018.otf") format("opentype");
-}
-
-@font-face {
   font-family: "GothamRoundedMedium";
   src: url("../vendor/GothamRounded-Medium.otf") format("opentype");
 }
@@ -306,6 +301,7 @@ a:hover, a:visited {
   color: #6a6a6a;
   text-transform: uppercase;
   padding: 16px;
+  line-height: 1.6;
 }
 
 .seventh .buttons {
@@ -357,6 +353,31 @@ a:hover, a:visited {
 
 .seventh .buttons .apple a .fa-apple, .seventh .buttons .apple a .fa-android, .seventh .buttons .android a .fa-apple, .seventh .buttons .android a .fa-android {
   font-size: 35px;
+}
+
+.footer {
+  padding: 40px 0 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__paragraphs {
+  flex: 1;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__paragraphs p {
+  color: #6a6a6a;
+  font: 14px "GothamRoundedBold", sans-serif;
+  padding: 10px;
+}
+
+.footer__paragraphs p:first-child {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

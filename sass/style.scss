@@ -2,10 +2,7 @@
     font-family: 'GothamRoundedBold';
 	src: url('../vendor/GothamRounded-Bold.otf') format('opentype');
 }
-@font-face{
-    font-family: "GothamRoundedBook";
-	src: url('../vendor/GothamRoundedBook_21018.otf') format('opentype');
-}
+
 @font-face{
     font-family: "GothamRoundedMedium";
 	src: url('../vendor/GothamRounded-Medium.otf') format('opentype');
@@ -26,7 +23,6 @@ a {
 			
 }
 
-$gothamBook: 'GothamRoundedBook', sans-serif;
 $gothamMedium: 'GothamRoundedMedium', sans-serif;
 $gothamBold: 'GothamRoundedBold', sans-serif;
 
@@ -320,6 +316,7 @@ $greyfont: #6a6a6a;
 		color: $greyfont;		
 		text-transform: uppercase;
 		padding: 16px;
+		line-height: 1.6;
 	}
 	.buttons {
 		display: flex;
@@ -374,3 +371,32 @@ $greyfont: #6a6a6a;
 
 	}
 }				
+
+.footer {
+	padding: 40px 0 40px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+
+	&__paragraphs {
+		flex: 1;
+		justify-content: flex-start;
+		display: flex;
+		flex-direction: column;
+
+		p {
+			color: $greyfont;
+			font: 14px $gothamBold;
+			padding: 10px;
+			&:first-child {
+				text-transform: uppercase;
+
+			}
+		}
+	}
+
+	&__camera {
+
+	}
+}
