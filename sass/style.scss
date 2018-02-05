@@ -164,20 +164,23 @@ $greyfont: #6a6a6a;
 
 	}
 
-	>.carousel {
+	#myCarousel-first {
 		flex: 0.65;
 		padding: 15px;
 
 		.counter {
 			display: flex;
 			flex-direction: row;
-
+			font: 16px $gothamBold;	
+			position: absolute;
+			bottom: 19%;
+			left: 6%;
 		}
 
-		.carousel-indicators {
+		#indicators-first {
 			display: none;
 		}
-		.carousel-control {
+		.carousel-control-first {
 			position: absolute;
 			top: 80%;
 			font-size: 30px;
@@ -188,11 +191,11 @@ $greyfont: #6a6a6a;
 			width: 0;
 		}
 
-		.left {
+		.left-first {
 			left: 5%;
 		}
 
-		.right {
+		.right-first {
 			left: 10%;
 		}
 

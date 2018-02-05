@@ -151,21 +151,25 @@ a:hover, a:visited {
   flex: 1;
 }
 
-.third > .carousel {
+.third #myCarousel-first {
   flex: 0.65;
   padding: 15px;
 }
 
-.third > .carousel .counter {
+.third #myCarousel-first .counter {
   display: flex;
   flex-direction: row;
+  font: 16px "GothamRoundedBold", sans-serif;
+  position: absolute;
+  bottom: 19%;
+  left: 6%;
 }
 
-.third > .carousel .carousel-indicators {
+.third #myCarousel-first #indicators-first {
   display: none;
 }
 
-.third > .carousel .carousel-control {
+.third #myCarousel-first .carousel-control-first {
   position: absolute;
   top: 80%;
   font-size: 30px;
@@ -176,11 +180,11 @@ a:hover, a:visited {
   width: 0;
 }
 
-.third > .carousel .left {
+.third #myCarousel-first .left-first {
   left: 5%;
 }
 
-.third > .carousel .right {
+.third #myCarousel-first .right-first {
   left: 10%;
 }
 

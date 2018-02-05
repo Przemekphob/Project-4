@@ -51,16 +51,16 @@
             <div class="third__image">
                 <img src="images/cutedphone.png" alt="phone"/>
             </div>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                    <li data-target="#myCarousel" data-slide-to="4"></li>
-                    <li data-target="#myCarousel" data-slide-to="5"></li>                    
+            <div id="myCarousel-first" class="carousel slide " data-ride="carousel" data-interval="false">
+                <ol id="indicators-first" class="carousel-indicators">
+                    <li data-target="#myCarousel-first" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarousel-first" data-slide-to="2"></li>
+                    <li data-target="#myCarousel-first" data-slide-to="3"></li>
+                    <li data-target="#myCarousel-first" data-slide-to="4"></li>
+                    <li data-target="#myCarousel-first" data-slide-to="5"></li>                    
                 </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
+                <div id ="carousel-counter--first" class="carousel-inner">
+                    <div id="item" class="item active">
                         <div class="headercore">
                             <h2>Slide 1</h2>
                             <p>
@@ -69,7 +69,7 @@
                             <button class="corebutton">get started</button>
                         </div>
                     </div>
-                    <div class="item">
+                    <div id="item" class="item">
                         <div class="headercore">
                             <h2>Slide 2</h2>
                             <p>
@@ -78,7 +78,7 @@
                             <button class="corebutton">get started</button>
                         </div>
                     </div>
-                    <div class="item">
+                    <div id="item" class="item">
                         <div class="headercore">
                             <h2>Slide 3</h2>
                             <p>
@@ -87,7 +87,7 @@
                             <button class="corebutton">get started</button>
                         </div>
                     </div>
-                    <div class="item">
+                    <div id="item" class="item">
                         <div class="headercore">
                             <h2>Slide 4</h2>
                             <p>
@@ -96,7 +96,7 @@
                             <button class="corebutton">get started</button>
                         </div>
                     </div>
-                    <div class="item">
+                    <div id="item" class="item">
                         <div class="headercore">
                             <h2>Slide 5</h2>
                             <p>
@@ -107,12 +107,12 @@
                     </div>                                
                 </div>
                 <div class="counter">
-                    <div class=""></div><div class=""></div>
+                    <div id="active-slide"></div>/<div id="total-elements"></div>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <a  class="left-first carousel-control-first" href="#myCarousel-first" data-slide="prev">
                     <div class="fas fa-angle-left"></div>
                 </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <a class="right-first carousel-control-first" href="#myCarousel-first" data-slide="next">
                     <div class="fas fa-angle-right"></div>
                 </a>
             </div>            
@@ -126,6 +126,47 @@
                     <h2>Our community</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut quis mollis nunc.</p>
                 </div>
+
+
+            <div id="myCarouselSecond" class="carousel slide" data-ride="carousel" data-interval="false">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarouselSecond" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarouselSecond" data-slide-to="2"></li>                 
+                </ol>
+                <div id ="carousel-counter" class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/Livelloimg1.png" alt="Livelloimg1"/>
+                        <img src="images/Livelloimg2.png" alt="Livelloimg2"/>
+                    </div>
+                    <div id="item" class="item">
+                        <img src="images/Livelloimg2.png" alt="Livelloimg2"/>
+                        <img src="images/Livelloimg1.png" alt="Livelloimg1"/>
+                    </div>
+                              
+                </div>
+                <div class="">
+                    <div id="active-slide"></div>/<div id=""></div>
+                </div>
+                <a class="left carousel-control-second" href="#myCarouselSecond" data-slide="prev">
+                    <div class="fas fa-angle-left"></div>
+                </a>
+                <a class="right carousel-control-second" href="#myCarouselSecond" data-slide="next">
+                    <div class="fas fa-angle-right"></div>
+                </a>
+            </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
                 <div class="image1">
                     <img src="images/Livelloimg1.png" alt="Livelloimg1"/>
                 </div>
