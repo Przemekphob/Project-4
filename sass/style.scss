@@ -227,16 +227,43 @@ $greyfont: #6a6a6a;
 			font: 10px $gothamMedium;
 		}
 	}
-
-	.image1 {
-		flex: 1.4;
-	}
-
-	.image2 {
-		flex: 1.4;
-	}
-
 }
+
+
+.carousel-inner {
+
+	.active.left { 
+		left: -50%; 
+	}
+	.prev {
+		left: -50%; 
+	}
+	.next { 
+		left:  50%; 
+	}
+}
+
+.carousel-control.left, .carousel-control.right {
+	position: absolute;
+	top: -20%;
+	font-size: 30px;
+	opacity: 1;
+	background-image: none; 
+	outline: none;
+	width: 0;
+}
+.carousel-control.left {
+	color: #000;
+	left: 92%;
+}
+
+.carousel-control.right {
+	color: #000;
+	left: 95%;
+}	
+
+
+
 
 .fifthy {
 	margin: 0;
@@ -389,6 +416,7 @@ $greyfont: #6a6a6a;
 		flex-direction: column;
 
 		p {
+
 			color: $greyfont;
 			font: 14px $gothamBold;
 			padding: 10px;
@@ -396,10 +424,14 @@ $greyfont: #6a6a6a;
 				text-transform: uppercase;
 
 			}
+			strong {
+				color: $darkCyan;
+			}
 		}
 	}
 
-	&__camera {
 
-	}
 }
+
+
+
