@@ -66,7 +66,7 @@ a:hover, a:visited { color: #FFF; }
 
 .fourth .camerainfo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; padding: 60px 60px 60px 0; }
 
-.fourth .camerainfo h2 { font: 16px "GothamRoundedBold", sans-serif; color: #000; text-transform: uppercase; }
+.fourth .camerainfo h2 { padding: 10px; font: 16px "GothamRoundedBold", sans-serif; color: #000; text-transform: uppercase; }
 
 .fourth .camerainfo p { color: #6a6a6a; font: 10px "GothamRoundedMedium", sans-serif; }
 

@@ -218,6 +218,7 @@ $greyfont: #6a6a6a;
 		padding: 60px 60px 60px 0;
 
 		h2 {
+			padding: 10px;
 			font: 16px $gothamBold;	
 			color: #000;
 			text-transform: uppercase;
@@ -231,7 +232,6 @@ $greyfont: #6a6a6a;
 
 
 .carousel-inner {
-
 	.active.left { 
 		left: -50%; 
 	}
