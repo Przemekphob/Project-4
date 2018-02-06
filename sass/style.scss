@@ -17,7 +17,7 @@ p, a, i, li, ul, ol, h1, h2, h3, button{
 
 a {
 	text-decoration: none;
-	&:hover, &:visited {
+	&:hover, &:visited, &:link, &:active {
 		color: #FFF;
 	}
 			
@@ -345,58 +345,68 @@ $greyfont: #6a6a6a;
 		padding: 16px;
 		line-height: 1.6;
 	}
+
 	.buttons {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+    	height: 100%;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: row;
+    	justify-content: center;
+    	align-items: center;
 		margin: 30px;
-		height: 5vh;
-		padding: 40px 0 120px 0;
+		padding: 40px 150px 120px 150px;
+
 		.apple, .android  {
-			display: flex;
+			color: #FFF;
+			text-decoration: none;
 			flex-direction: row;
+			justify-content: center;
 			align-items: center;
-			padding: 15px;
-			input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  				color: #FFF;
+			flex: 1;
+			display: flex;
+         	width: 100%;
+			border: none;
+			margin: 5px;
+
+			.div1, .div2 {
+				display: flex;
+				justify-content: center;
+				align-items: center;	
 			}
 
-			input {
-				border: none;
-				background-color: $lightCyan;
-				padding: 20px 75px 20px 25px;
-				font: 16px $gothamBold;
-				text-transform: uppercase;
-				color: #FFF;
+
+			.div1 {
+				
 				border-top-left-radius: 4px;
 				border-bottom-left-radius: 4px;
-				height: 100%;
-				margin: 0;
+				background-color: $lightCyan;
+				padding: 5px 65px 5px 5px;
+				p {
+					
+					height: 100%;
+					font: 16px $gothamBold;	
+					color: #FFF;
+				}
 			}
 
-			a {
-				border: none;
-				display: flex;
-				margin: 0;
-				align-items: center;
-				padding: 12px;
-				height: 100%;
+			.div2 {
+				
 				background-color: $darkCyan;
-				flex: 1;
+				padding: 10px;
 				border-top-right-radius: 4px;
 				border-bottom-right-radius: 4px;
 
 				.fa-apple, .fa-android {
-					font-size: 35px;
+				
+				height: 100%;
+				font-size: 40px;
 
 				}
 			}
-
 		}
 
-
 	}
+
 }				
 
 .footer {
@@ -721,40 +731,6 @@ $greyfont: #6a6a6a;
 	}
 
 
-
-	.seventh {
-		padding-top: 20px;
-		.buttons {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			margin: 30px;
-			height: 5vh;
-			padding: 40px 0 90px 0;
-			.apple, .android  {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				margin: 25px 0 25px 0;
-				padding: 15px;
-
-				input {
-					padding: 15px 50px 15px 10px;
-				}
-				a {
-					padding: 12px;
-					height: 100%;
-
-					.fa-apple, .fa-android {
-						font-size: 25px;
-
-					}
-				}
-
-			}
-		}
-	}	
 	.footer {
 		padding: 20px 5px 20px 5px;
 	}
