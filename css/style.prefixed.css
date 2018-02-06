@@ -104,17 +104,17 @@ a:hover, a:visited, a:link, a:active { color: #FFF; }
 
 .seventh .buttons { height: 100%; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 30px; padding: 40px 150px 120px 150px; }
 
-.seventh .buttons .apple, .seventh .buttons .android { color: #FFF; text-decoration: none; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; border: none; margin: 5px; }
+.seventh .buttons .apple, .seventh .buttons .android { color: #FFF; text-decoration: none; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; border: none; margin: 10px; }
 
-.seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 7vh; }
 
-.seventh .buttons .apple .div1, .seventh .buttons .android .div1 { border-top-left-radius: 4px; border-bottom-left-radius: 4px; background-color: #1abc9c; padding: 5px 65px 5px 5px; }
+.seventh .buttons .apple .div1, .seventh .buttons .android .div1 { -webkit-box-flex: 4; -ms-flex: 4; flex: 4; border-top-left-radius: 4px; border-bottom-left-radius: 4px; background-color: #1abc9c; }
 
-.seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p { height: 100%; font: 16px "GothamRoundedBold", sans-serif; color: #FFF; }
+.seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p { font: 16px "GothamRoundedBold", sans-serif; color: #FFF; margin: 5px 75px 5px 5px; }
 
-.seventh .buttons .apple .div2, .seventh .buttons .android .div2 { background-color: #16a085; padding: 10px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
+.seventh .buttons .apple .div2, .seventh .buttons .android .div2 { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; background-color: #16a085; border-top-right-radius: 4px; border-bottom-right-radius: 4px; }
 
-.seventh .buttons .apple .div2 .fa-apple, .seventh .buttons .apple .div2 .fa-android, .seventh .buttons .android .div2 .fa-apple, .seventh .buttons .android .div2 .fa-android { height: 100%; font-size: 40px; }
+.seventh .buttons .apple .div2 .fa-apple, .seventh .buttons .apple .div2 .fa-android, .seventh .buttons .android .div2 .fa-apple, .seventh .buttons .android .div2 .fa-android { margin: 10px; font-size: 40px; }
 
 .footer { padding: 40px 0 40px 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -126,7 +126,11 @@ a:hover, a:visited, a:link, a:active { color: #FFF; }
 
 .footer__paragraphs p strong { color: #16a085; }
 
-@media (min-width: 992px) and (max-width: 1199px) { .footer { padding: 40px 10px 40px 10px; } }
+@media (min-width: 992px) and (max-width: 1199px) { .seventh { padding-top: 30px; }
+  .seventh .buttons { margin: 30px; padding: 40px 75px 75px 75px; }
+  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 { height: 7vh; }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p { font: 16px "GothamRoundedBold", sans-serif; color: #FFF; margin: 5px 75px 5px 4px; }
+  .footer { padding: 40px 10px 40px 10px; } }
 
 @media (min-width: 768px) and (max-width: 991px) { .jumbotron { height: 75vh; }
   .second { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -143,12 +147,16 @@ a:hover, a:visited, a:link, a:active { color: #FFF; }
   .headercore p { padding: 15px 0 15px 0; }
   .headercore button { margin-bottom: 30px; }
   .fourth { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 30px 0 30px 0; }
-  .fourth .camerainfo { padding: 20px 100px 100px 100px; }
+  .fourth .camerainfo { padding: 20px 100px 50px 100px; }
   .carousel-control { top: -10%; }
   .carousel-control.left { color: #000; left: 5%; }
   .carousel-control.right { color: #000; left: 91%; }
   .fifthy { height: 40vh; }
-  .footer { padding: 40px 15px 40px 15px; } }
+  .footer { padding: 40px 15px 40px 15px; }
+  .seventh { padding-top: 30px; }
+  .seventh .buttons { margin: 30px; padding: 40px 25px 120px 25px; }
+  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 { height: 7vh; }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p { font: 16px "GothamRoundedBold", sans-serif; color: #FFF; margin: 5px 70px 5px 4px; } }
 
 @media (max-width: 767px) { .corebutton { margin: 10px 0 10px 0; padding: 20px 30px 20px 30px; }
   .headercore p { padding: 10px 0 10px 0; }
@@ -178,4 +186,8 @@ a:hover, a:visited, a:link, a:active { color: #FFF; }
   .carousel-control.right { color: #000; left: 91%; }
   .fifthy { height: 40vh; }
   .fifthy__signup .form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 20px 5px; height: 4vh; }
+  .seventh { padding-top: 30px; }
+  .seventh .buttons { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: 30px; padding: 40px 25px 40px 25px; }
+  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 { height: 8vh; }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p { font: 16px "GothamRoundedBold", sans-serif; color: #FFF; margin: 5px 70px 5px 4px; }
   .footer { padding: 20px 5px 20px 5px; } }
