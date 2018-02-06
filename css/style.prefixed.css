@@ -713,7 +713,7 @@ a:hover, a:visited {
   }
   .jumbotron {
     width: 100%;
-    height: 65vh;
+    height: 90vh;
   }
   .jumbotron .navi {
     display: -webkit-box;
@@ -881,7 +881,7 @@ a:hover, a:visited {
     left: 91%;
   }
   .fifthy {
-    height: 30vh;
+    height: 40vh;
   }
   .seventh {
     padding-top: 20px;
@@ -917,6 +917,16 @@ a:hover, a:visited {
             align-items: center;
     margin: 25px 0 25px 0;
     padding: 15px;
+  }
+  .seventh .buttons .apple input, .seventh .buttons .android input {
+    padding: 15px 50px 15px 10px;
+  }
+  .seventh .buttons .apple a, .seventh .buttons .android a {
+    padding: 12px;
+    height: 100%;
+  }
+  .seventh .buttons .apple a .fa-apple, .seventh .buttons .apple a .fa-android, .seventh .buttons .android a .fa-apple, .seventh .buttons .android a .fa-android {
+    font-size: 25px;
   }
   .footer {
     padding: 20px 5px 20px 5px;
