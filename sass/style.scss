@@ -200,8 +200,6 @@ $greyfont: #6a6a6a;
 		}
 
 	}
-
-
 }
 
 .fourth {
@@ -243,7 +241,7 @@ $greyfont: #6a6a6a;
 	}
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control {
 	position: absolute;
 	top: -20%;
 	font-size: 30px;
@@ -261,7 +259,6 @@ $greyfont: #6a6a6a;
 	color: #000;
 	left: 95%;
 }	
-
 
 
 
@@ -435,3 +432,298 @@ $greyfont: #6a6a6a;
 
 
 
+@media(min-width: 992px) and (max-width: 1199px) {
+	
+	.footer {
+		padding: 40px 10px 40px 10px;
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.jumbotron {
+		height: 75vh;
+	}
+
+	.second {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		
+
+		&__description {
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex: 1;
+		}
+
+		&__phone {
+			padding-top: 0;
+			flex: 1;
+		}
+	}
+
+	.third {
+		padding-top: 20px;
+
+
+		#myCarousel-first {
+			flex: 0.65;
+			padding: 15px;
+
+			.counter {
+				display: flex;
+				flex-direction: row;
+				font: 16px $gothamBold;	
+				position: absolute;
+				bottom: 20%;
+				left: 8%;
+			}
+
+			#indicators-first {
+				display: none;
+			}
+			.carousel-control-first {
+				position: absolute;
+				top: 80%;
+				font-size: 30px;
+				color: #000;
+				opacity: 1;
+				background-image: none; 
+				outline: none;
+				width: 0;
+			}
+
+			.left-first {
+				left: 5%;
+			}
+
+			.right-first {
+				left: 15%;
+			}
+
+		}
+	}
+
+	.corebutton {
+		margin: 15px 0 15px 0;
+	}
+
+	.headercore {
+		p {
+			padding: 15px 0 15px 0;
+		}
+		button {
+			margin-bottom: 30px;
+		}
+		
+	}
+
+	.fourth {
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+
+		.camerainfo {
+			padding: 20px 100px 100px 100px;
+
+		}
+	}
+
+	.carousel-control {
+		top: -10%;
+
+	}
+	.carousel-control.left {
+		color: #000;
+		left: 5%;
+	}
+
+	.carousel-control.right {
+		color: #000;
+		left: 91%;
+	}	
+
+	.fifthy {
+		height: 40vh;
+	}
+
+	.footer {
+	padding: 40px 15px 40px 15px;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.corebutton {
+		margin: 10px 0 10px 0;
+		padding: 20px 30px 20px 30px;
+	}
+
+	.headercore {
+		p {
+			padding: 10px 0 10px 0;
+		}
+		button {
+			margin-bottom: 30px;
+		}
+		
+	}
+
+	.jumbotron {
+		width: 100%;
+		height: 65vh;
+
+		.navi {
+		  	display: flex;
+			flex: 1;
+		  	align-items: flex-start;
+		  	text-align: center;
+
+			&__menu {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				list-style-type: none;
+				flex: 1;
+				li {
+					padding: 10px;
+				}  			
+			}
+		}
+
+		.header {
+			display: flex;
+			flex: 1.2;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			h1 {
+				text-align: center;
+				color: #FFF;
+				font: 28px $gothamBold;
+				text-transform: uppercase;
+				padding: 10px 2px 10px 2px;
+				letter-spacing: 5px;
+			}
+
+			p {
+				font: 12px $gothamMedium;			
+			}
+
+		}
+		.icons {
+			flex: 0.3;
+		}
+	}
+
+	.second {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+
+		&__description {
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			flex: 1;
+		}
+
+		&__phone {
+			padding-top: 0;
+			flex: 1;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.third {
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+
+		&__image {
+			flex: 1;
+			justify-content: center;
+			display: flex;
+
+		}
+
+		#myCarousel-first {
+			flex: 1;
+			padding: 10px 10px 75px 10px;
+			text-align: center;
+
+			.counter {
+				bottom: 19%;
+				left: 6%;
+			}
+		}
+	}
+
+	.fourth {
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+
+		.camerainfo {
+			padding: 20px 100px 100px 100px;
+
+		}
+	}
+
+	.carousel-control {
+		top: -10%;
+
+	}
+	.carousel-control.left {
+		color: #000;
+		left: 5%;
+	}
+
+	.carousel-control.right {
+		color: #000;
+		left: 91%;
+	}	
+
+	.fifthy {
+		height: 30vh;
+	}
+
+
+
+	.seventh {
+		padding-top: 20px;
+		.buttons {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: 30px;
+			height: 5vh;
+			padding: 40px 0 90px 0;
+			.apple, .android  {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				margin: 25px 0 25px 0;
+				padding: 15px;
+			}
+		}
+	}	
+	.footer {
+		padding: 20px 5px 20px 5px;
+	}
+}

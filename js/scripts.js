@@ -12,7 +12,7 @@ function caruselPrev() {
     currentSlide = totalElements;
   }
   document.querySelector("#myCarousel-first #active-slide").innerHTML  = currentSlide;
-};
+}
 
 function caruselNext() {
   var currentSlide = parseInt(document.querySelector("#myCarousel-first li.active").getAttribute("data-slide-to"));
@@ -22,7 +22,7 @@ function caruselNext() {
     currentSlide = 1;
   }
   document.querySelector("#myCarousel-first #active-slide").innerHTML  = currentSlide;
-};
+}
 
 $('.carousel-second .item').each(function(){
   var next = $(this).next();
