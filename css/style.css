@@ -278,25 +278,20 @@ a:hover, a:visited, a:link, a:active {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   margin: 30px;
-  height: 5vh;
+  height: 100%;
 }
 
 .fifthy__signup .form a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: auto;
   padding: 20px;
-  height: 100%;
   background-color: #16a085;
-  flex: 1;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
 
 .fifthy__signup .form a .fa-check {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .fifthy__signup .form input {
@@ -304,8 +299,7 @@ a:hover, a:visited, a:link, a:active {
   text-transform: uppercase;
   font: 16px "GothamRoundedMedium", sans-serif;
   border: none;
-  height: 100%;
-  flex: 5;
+  height: auto;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
@@ -349,7 +343,6 @@ a:hover, a:visited, a:link, a:active {
   text-decoration: none;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   flex: 1;
   display: flex;
   width: 100%;
@@ -360,12 +353,11 @@ a:hover, a:visited, a:link, a:active {
 .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 7vh;
 }
 
 .seventh .buttons .apple .div1, .seventh .buttons .android .div1 {
   flex: 4;
+  height: auto;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   background-color: #1abc9c;
@@ -379,6 +371,7 @@ a:hover, a:visited, a:link, a:active {
 
 .seventh .buttons .apple .div2, .seventh .buttons .android .div2 {
   flex: 1;
+  height: auto;
   background-color: #16a085;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -425,9 +418,6 @@ a:hover, a:visited, a:link, a:active {
   .seventh .buttons {
     margin: 30px;
     padding: 40px 75px 75px 75px;
-  }
-  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 {
-    height: 7vh;
   }
   .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
     font: 16px "GothamRoundedBold", sans-serif;
@@ -534,9 +524,6 @@ a:hover, a:visited, a:link, a:active {
   .seventh .buttons {
     margin: 30px;
     padding: 40px 25px 120px 25px;
-  }
-  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 {
-    height: 7vh;
   }
   .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
     font: 16px "GothamRoundedBold", sans-serif;
@@ -670,9 +657,7 @@ a:hover, a:visited, a:link, a:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     margin: 20px 5px;
-    height: 4vh;
   }
   .seventh {
     padding-top: 30px;
@@ -681,9 +666,6 @@ a:hover, a:visited, a:link, a:active {
     flex-direction: column;
     margin: 30px;
     padding: 40px 25px 40px 25px;
-  }
-  .seventh .buttons .apple .div1, .seventh .buttons .apple .div2, .seventh .buttons .android .div1, .seventh .buttons .android .div2 {
-    height: 8vh;
   }
   .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
     font: 16px "GothamRoundedBold", sans-serif;
