@@ -1,3 +1,4 @@
+/* variables and fonts imports */
 @font-face {
   font-family: 'GothamRoundedBold';
   src: url("../vendor/GothamRounded-Bold.otf") format("opentype");
@@ -8,19 +9,9 @@
   src: url("../vendor/GothamRounded-Medium.otf") format("opentype");
 }
 
-p, a, i, li, ul, ol, h1, h2, h3, button {
-  margin: 0;
-  padding: 0;
-  letter-spacing: 3px;
-  color: #FFF;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover, a:visited, a:link, a:active {
-  color: #FFF;
+/* globals classes imports */
+.sectionbggrey {
+  background-color: #f5f6f7;
 }
 
 .corebutton {
@@ -33,8 +24,17 @@ a:hover, a:visited, a:link, a:active {
   margin: 20px 0 20px 0;
 }
 
-.sectionbggrey {
-  background-color: #f5f6f7;
+@media (min-width: 768px) and (max-width: 991px) {
+  .corebutton {
+    margin: 15px 0 15px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .corebutton {
+    margin: 10px 0 10px 0;
+    padding: 20px 30px 20px 30px;
+  }
 }
 
 .headercore h2 {
@@ -57,6 +57,40 @@ a:hover, a:visited, a:link, a:active {
   margin-bottom: 40px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .headercore p {
+    padding: 15px 0 15px 0;
+  }
+  .headercore button {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headercore p {
+    padding: 10px 0 10px 0;
+  }
+  .headercore button {
+    margin-bottom: 30px;
+  }
+}
+
+p, a, i, li, ul, ol, h1, h2, h3, button {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+  color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+  color: #FFF;
+}
+
+/* Main classes imports*/
 .jumbotron {
   margin: 0;
   display: flex;
@@ -127,6 +161,57 @@ a:hover, a:visited, a:link, a:active {
   margin: 10px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .jumbotron {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron {
+    width: 100%;
+    height: 90vh;
+  }
+  .jumbotron .navi {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    text-align: center;
+  }
+  .jumbotron .navi__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    flex: 1;
+  }
+  .jumbotron .navi__menu li {
+    padding: 4px;
+  }
+  .jumbotron .header {
+    display: flex;
+    flex: 1.2;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .jumbotron .header h1 {
+    text-align: center;
+    color: #FFF;
+    font: 28px "GothamRoundedBold", sans-serif;
+    text-transform: uppercase;
+    padding: 6px 2px 6px 2px;
+    letter-spacing: 5px;
+  }
+  .jumbotron .header p {
+    font: 12px "GothamRoundedMedium", sans-serif;
+  }
+  .jumbotron .icons {
+    flex: 0.3;
+  }
+}
+
 .second {
   display: flex;
 }
@@ -139,6 +224,52 @@ a:hover, a:visited, a:link, a:active {
 .second__phone {
   padding-top: 100px;
   flex: 1.5;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .second__description {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  .second__phone {
+    padding-top: 0;
+    flex: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .second__description {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+  }
+  .second__phone {
+    padding-top: 0;
+    flex: 1;
+  }
+  .second__phone img {
+    width: 100%;
+  }
 }
 
 .third {
@@ -188,6 +319,86 @@ a:hover, a:visited, a:link, a:active {
   left: 10%;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .seventh {
+    padding-top: 30px;
+  }
+  .seventh .buttons {
+    margin: 30px;
+    padding: 40px 75px 75px 75px;
+  }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
+    font: 16px "GothamRoundedBold", sans-serif;
+    color: #FFF;
+    margin: 5px 75px 5px 4px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .third {
+    padding-top: 20px;
+  }
+  .third #myCarousel-first {
+    flex: 0.65;
+    padding: 15px;
+  }
+  .third #myCarousel-first .counter {
+    display: flex;
+    flex-direction: row;
+    font: 16px "GothamRoundedBold", sans-serif;
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+  }
+  .third #myCarousel-first #indicators-first {
+    display: none;
+  }
+  .third #myCarousel-first .carousel-control-first {
+    position: absolute;
+    top: 80%;
+    font-size: 30px;
+    color: #000;
+    opacity: 1;
+    background-image: none;
+    outline: none;
+    width: 0;
+  }
+  .third #myCarousel-first .left-first {
+    left: 5%;
+  }
+  .third #myCarousel-first .right-first {
+    left: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  .third {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .third__image {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+  }
+  .third #myCarousel-first {
+    flex: 1;
+    padding: 10px 10px 75px 10px;
+    text-align: center;
+  }
+  .third #myCarousel-first .counter {
+    bottom: 19%;
+    left: 9%;
+  }
+  .third #myCarousel-first .left-first {
+    left: 5%;
+  }
+  .third #myCarousel-first .right-first {
+    left: 15%;
+  }
+}
+
 .fourth {
   display: flex;
   align-items: center;
@@ -213,6 +424,26 @@ a:hover, a:visited, a:link, a:active {
 .fourth .camerainfo p {
   color: #6a6a6a;
   font: 10px "GothamRoundedMedium", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .fourth {
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+  }
+  .fourth .camerainfo {
+    padding: 20px 100px 50px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fourth {
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+  }
+  .fourth .camerainfo {
+    padding: 20px 100px 100px 100px;
+  }
 }
 
 .carousel-inner .active.left {
@@ -245,6 +476,34 @@ a:hover, a:visited, a:link, a:active {
 .carousel-control.right {
   color: #000;
   left: 95%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-control {
+    top: -10%;
+  }
+  .carousel-control.left {
+    color: #000;
+    left: 5%;
+  }
+  .carousel-control.right {
+    color: #000;
+    left: 91%;
+  }
+}
+
+@media (max-width: 767px) {
+  .carousel-control {
+    top: -10%;
+  }
+  .carousel-control.left {
+    color: #000;
+    left: 5%;
+  }
+  .carousel-control.right {
+    color: #000;
+    left: 91%;
+  }
 }
 
 .fifthy {
@@ -302,6 +561,24 @@ a:hover, a:visited, a:link, a:active {
   height: auto;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .fifthy {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .fifthy {
+    height: 40vh;
+  }
+  .fifthy__signup .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 5px;
+  }
 }
 
 .seventh {
@@ -382,6 +659,37 @@ a:hover, a:visited, a:link, a:active {
   font-size: 40px;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+  .seventh {
+    padding-top: 30px;
+  }
+  .seventh .buttons {
+    margin: 30px;
+    padding: 40px 25px 120px 25px;
+  }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
+    font: 16px "GothamRoundedBold", sans-serif;
+    color: #FFF;
+    margin: 5px 70px 5px 4px;
+  }
+}
+
+@media (max-width: 767px) {
+  .seventh {
+    padding-top: 30px;
+  }
+  .seventh .buttons {
+    flex-direction: column;
+    margin: 30px;
+    padding: 40px 25px 40px 25px;
+  }
+  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
+    font: 16px "GothamRoundedBold", sans-serif;
+    color: #FFF;
+    margin: 5px 70px 5px 4px;
+  }
+}
+
 .footer {
   padding: 40px 0 40px 0;
   display: flex;
@@ -412,266 +720,18 @@ a:hover, a:visited, a:link, a:active {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .seventh {
-    padding-top: 30px;
-  }
-  .seventh .buttons {
-    margin: 30px;
-    padding: 40px 75px 75px 75px;
-  }
-  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
-    font: 16px "GothamRoundedBold", sans-serif;
-    color: #FFF;
-    margin: 5px 75px 5px 4px;
-  }
   .footer {
     padding: 40px 10px 40px 10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .jumbotron {
-    height: 75vh;
-  }
-  .second {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .second__description {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-  }
-  .second__phone {
-    padding-top: 0;
-    flex: 1;
-  }
-  .third {
-    padding-top: 20px;
-  }
-  .third #myCarousel-first {
-    flex: 0.65;
-    padding: 15px;
-  }
-  .third #myCarousel-first .counter {
-    display: flex;
-    flex-direction: row;
-    font: 16px "GothamRoundedBold", sans-serif;
-    position: absolute;
-    bottom: 20%;
-    left: 8%;
-  }
-  .third #myCarousel-first #indicators-first {
-    display: none;
-  }
-  .third #myCarousel-first .carousel-control-first {
-    position: absolute;
-    top: 80%;
-    font-size: 30px;
-    color: #000;
-    opacity: 1;
-    background-image: none;
-    outline: none;
-    width: 0;
-  }
-  .third #myCarousel-first .left-first {
-    left: 5%;
-  }
-  .third #myCarousel-first .right-first {
-    left: 15%;
-  }
-  .corebutton {
-    margin: 15px 0 15px 0;
-  }
-  .headercore p {
-    padding: 15px 0 15px 0;
-  }
-  .headercore button {
-    margin-bottom: 30px;
-  }
-  .fourth {
-    flex-direction: column;
-    padding: 30px 0 30px 0;
-  }
-  .fourth .camerainfo {
-    padding: 20px 100px 50px 100px;
-  }
-  .carousel-control {
-    top: -10%;
-  }
-  .carousel-control.left {
-    color: #000;
-    left: 5%;
-  }
-  .carousel-control.right {
-    color: #000;
-    left: 91%;
-  }
-  .fifthy {
-    height: 40vh;
-  }
   .footer {
     padding: 40px 15px 40px 15px;
-  }
-  .seventh {
-    padding-top: 30px;
-  }
-  .seventh .buttons {
-    margin: 30px;
-    padding: 40px 25px 120px 25px;
-  }
-  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
-    font: 16px "GothamRoundedBold", sans-serif;
-    color: #FFF;
-    margin: 5px 70px 5px 4px;
   }
 }
 
 @media (max-width: 767px) {
-  .corebutton {
-    margin: 10px 0 10px 0;
-    padding: 20px 30px 20px 30px;
-  }
-  .headercore p {
-    padding: 10px 0 10px 0;
-  }
-  .headercore button {
-    margin-bottom: 30px;
-  }
-  .jumbotron {
-    width: 100%;
-    height: 90vh;
-  }
-  .jumbotron .navi {
-    display: flex;
-    flex: 1;
-    align-items: flex-start;
-    text-align: center;
-  }
-  .jumbotron .navi__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    flex: 1;
-  }
-  .jumbotron .navi__menu li {
-    padding: 4px;
-  }
-  .jumbotron .header {
-    display: flex;
-    flex: 1.2;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .jumbotron .header h1 {
-    text-align: center;
-    color: #FFF;
-    font: 28px "GothamRoundedBold", sans-serif;
-    text-transform: uppercase;
-    padding: 6px 2px 6px 2px;
-    letter-spacing: 5px;
-  }
-  .jumbotron .header p {
-    font: 12px "GothamRoundedMedium", sans-serif;
-  }
-  .jumbotron .icons {
-    flex: 0.3;
-  }
-  .second {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .second__description {
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-  }
-  .second__phone {
-    padding-top: 0;
-    flex: 1;
-  }
-  .second__phone img {
-    width: 100%;
-  }
-  .third {
-    padding-top: 25px;
-    display: flex;
-    flex-direction: column;
-  }
-  .third__image {
-    flex: 1;
-    justify-content: center;
-    display: flex;
-  }
-  .third #myCarousel-first {
-    flex: 1;
-    padding: 10px 10px 75px 10px;
-    text-align: center;
-  }
-  .third #myCarousel-first .counter {
-    bottom: 19%;
-    left: 9%;
-  }
-  .third #myCarousel-first .left-first {
-    left: 5%;
-  }
-  .third #myCarousel-first .right-first {
-    left: 15%;
-  }
-  .fourth {
-    flex-direction: column;
-    padding: 30px 0 30px 0;
-  }
-  .fourth .camerainfo {
-    padding: 20px 100px 100px 100px;
-  }
-  .carousel-control {
-    top: -10%;
-  }
-  .carousel-control.left {
-    color: #000;
-    left: 5%;
-  }
-  .carousel-control.right {
-    color: #000;
-    left: 91%;
-  }
-  .fifthy {
-    height: 40vh;
-  }
-  .fifthy__signup .form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 20px 5px;
-  }
-  .seventh {
-    padding-top: 30px;
-  }
-  .seventh .buttons {
-    flex-direction: column;
-    margin: 30px;
-    padding: 40px 25px 40px 25px;
-  }
-  .seventh .buttons .apple .div1 p, .seventh .buttons .android .div1 p {
-    font: 16px "GothamRoundedBold", sans-serif;
-    color: #FFF;
-    margin: 5px 70px 5px 4px;
-  }
   .footer {
     padding: 20px 5px 20px 5px;
   }

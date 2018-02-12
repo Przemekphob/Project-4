@@ -1,0 +1,45 @@
+.headercore {
+	h2 {
+		font: 18px $gothamBold;	
+		color: $darkCyan;
+		text-transform: uppercase;
+	}
+	p {
+		padding: 35px 0 35px 0;
+		color: $greyfont;
+		line-height: 22px;
+			strong {
+				color: #000;
+			}
+	}
+	button {
+		margin-bottom: 40px;
+	}
+	
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.headercore {
+		p {
+			padding: 15px 0 15px 0;
+		}
+		button {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media(max-width: 767px) { 
+
+	.headercore {
+		p {
+			padding: 10px 0 10px 0;
+		}
+		button {
+			margin-bottom: 30px;
+		}
+		
+	}
+
+}

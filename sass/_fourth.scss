@@ -1,0 +1,56 @@
+.fourth {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 120px 0 120px 0;
+
+	.camerainfo {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		text-align: center;
+		padding: 60px 60px 60px 0;
+
+		h2 {
+			padding: 10px;
+			font: 16px $gothamBold;	
+			color: #000;
+			text-transform: uppercase;
+		}
+		p {
+			color: $greyfont;
+			font: 10px $gothamMedium;
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.fourth {
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+
+		.camerainfo {
+			padding: 20px 100px 50px 100px;
+
+		}
+	}
+}
+
+@media(max-width: 767px) {
+
+	.fourth {
+		flex-direction: column;
+		padding: 30px 0 30px 0;
+
+		.camerainfo {
+			padding: 20px 100px 100px 100px;
+
+		}
+	}
+
+}

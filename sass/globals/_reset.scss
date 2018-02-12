@@ -1,0 +1,14 @@
+p, a, i, li, ul, ol, h1, h2, h3, button{
+	margin: 0;
+	padding: 0;
+	letter-spacing: 3px;
+	color: #FFF;
+}
+
+a {
+	text-decoration: none;
+	&:hover, &:visited, &:link, &:active {
+		color: #FFF;
+	}
+			
+}

@@ -1,0 +1,70 @@
+.carousel-inner {
+	.active.left { 
+		left: -50%; 
+	}
+	.prev {
+		left: -50%; 
+	}
+	.next { 
+		left:  50%; 
+	}
+}
+
+.carousel-control {
+	position: absolute;
+	top: -20%;
+	font-size: 30px;
+	opacity: 1;
+	background-image: none; 
+	outline: none;
+	width: 0;
+}
+.carousel-control.left {
+	color: #000;
+	left: 92%;
+}
+
+.carousel-control.right {
+	color: #000;
+	left: 95%;
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.carousel-control {
+		top: -10%;
+
+	}
+	.carousel-control.left {
+		color: #000;
+		left: 5%;
+	}
+
+	.carousel-control.right {
+		color: #000;
+		left: 91%;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.carousel-control {
+		top: -10%;
+
+	}
+	.carousel-control.left {
+		color: #000;
+		left: 5%;
+	}
+
+	.carousel-control.right {
+		color: #000;
+		left: 91%;
+	}
+
+}

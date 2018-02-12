@@ -1,0 +1,26 @@
+.corebutton {
+	background-color: $darkCyan;
+	font: 12px $gothamBold;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 2%;
+	padding: 20px 30px 20px 30px;
+	margin: 20px 0 20px 0;
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.corebutton {
+		margin: 15px 0 15px 0;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.corebutton {
+		margin: 10px 0 10px 0;
+		padding: 20px 30px 20px 30px;
+	}
+
+}

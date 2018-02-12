@@ -1,0 +1,53 @@
+.footer {
+	padding: 40px 0 40px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+
+	&__paragraphs {
+		flex: 1;
+		justify-content: flex-start;
+		display: flex;
+		flex-direction: column;
+
+		p {
+
+			color: $greyfont;
+			font: 14px $gothamBold;
+			padding: 10px;
+			&:first-child {
+				text-transform: uppercase;
+
+			}
+			strong {
+				color: $darkCyan;
+			}
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.footer {
+		padding: 40px 10px 40px 10px;
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.footer {
+		padding: 40px 15px 40px 15px;
+	}
+
+	
+
+}
+
+@media(max-width: 767px) {
+
+	.footer {
+		padding: 20px 5px 20px 5px;
+	}
+}

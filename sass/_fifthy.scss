@@ -1,0 +1,85 @@
+.fifthy {
+	margin: 0;
+	flex-direction: column;
+	background-image: url("../images/Livellobg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	height: 75vh;
+	justify-content: center;
+	align-items: center;
+
+	&__signup {	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		h1 {
+			font: 24px $gothamBold;	
+			text-transform: uppercase;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin: 30px;
+			height: 100%;
+				
+			a {
+				height: auto;
+				padding: 20px;
+				background-color: $darkCyan;
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				.fa-check {
+					font-size: 15px;
+
+				}
+			}
+
+			input {
+				padding: 20px;
+				text-transform: uppercase;
+				font: 16px $gothamMedium;	
+				border: none;		
+				height: auto;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+
+			}
+		}
+	}
+}
+
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.fifthy {
+		height: 40vh;
+	}
+
+}
+
+@media(max-width: 767px) {
+
+	.fifthy {
+		height: 40vh;
+		&__signup {	
+			.form {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				margin: 20px 5px;
+			}
+		}
+	}
+
+}

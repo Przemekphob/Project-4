@@ -1,0 +1,134 @@
+.jumbotron {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../images/mainbg.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+
+	.navi {
+	  	display: flex;
+		flex: 1;
+	  	align-items: flex-start;
+	  	text-align: center;
+
+		&__menu {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			list-style-type: none;
+			flex: 1;
+			li {
+				a {
+					font: 16px $gothamMedium;
+					text-transform: uppercase;
+					text-decoration: none;
+					&:visited {
+						color: inherit;
+					}
+				}
+			}  			
+		}
+	}
+
+	.header {
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+		h1 {
+			color: #FFF;
+			font: 36px $gothamBold;
+			text-transform: uppercase;
+			padding: 15px;
+			letter-spacing: 10px;
+		}
+
+		p {
+			font: 12px $gothamMedium;			
+		}
+
+	}
+	.icons {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+
+		.fa-twitter, .fa-flickr, .fa-dribbble {
+			color: #FFF;
+			font-size: 24px;
+			margin: 10px;
+
+		}
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+	.jumbotron {
+		height: 75vh;
+	}
+}
+
+@media(max-width: 767px) {
+
+	.jumbotron {
+		width: 100%;
+		height: 90vh;
+
+		.navi {
+		  	display: flex;
+			flex: 1;
+		  	align-items: flex-start;
+		  	text-align: center;
+
+			&__menu {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				list-style-type: none;
+				flex: 1;
+				li {
+					padding: 4px;
+				}  			
+			}
+		}
+
+		.header {
+			display: flex;
+			flex: 1.2;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			h1 {
+				text-align: center;
+				color: #FFF;
+				font: 28px $gothamBold;
+				text-transform: uppercase;
+				padding: 6px 2px 6px 2px;
+				letter-spacing: 5px;
+			}
+
+			p {
+				font: 12px $gothamMedium;			
+			}
+
+		}
+		.icons {
+			flex: 0.3;
+		}
+	}
+
+}

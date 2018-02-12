@@ -1,0 +1,153 @@
+.third {
+	display: flex;
+	flex-direction: row;
+	padding-top: 150px;
+
+	&__image {
+		flex: 1;
+
+	}
+
+	#myCarousel-first {
+		flex: 0.65;
+		padding: 15px;
+
+		.counter {
+			display: flex;
+			flex-direction: row;
+			font: 16px $gothamBold;	
+			position: absolute;
+			bottom: 19%;
+			left: 6%;
+		}
+
+		#indicators-first {
+			display: none;
+		}
+		.carousel-control-first {
+			position: absolute;
+			top: 80%;
+			font-size: 30px;
+			color: #000;
+			opacity: 1;
+			background-image: none; 
+			outline: none;
+			width: 0;
+		}
+
+		.left-first {
+			left: 5%;
+		}
+
+		.right-first {
+			left: 10%;
+		}
+
+	}
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+
+	.seventh {
+		padding-top: 30px;
+
+		.buttons {
+			margin: 30px;
+			padding: 40px 75px 75px 75px;
+
+			.apple, .android  {
+
+				.div1 {
+					p {
+						font: 16px $gothamBold;	
+						color: #FFF;
+						margin: 5px 75px 5px 4px;
+					}
+				}
+
+			}
+
+		}
+	}	
+}
+
+@media(min-width: 768px) and (max-width: 991px)  { 
+
+	.third {
+		padding-top: 20px;
+
+
+		#myCarousel-first {
+			flex: 0.65;
+			padding: 15px;
+
+			.counter {
+				display: flex;
+				flex-direction: row;
+				font: 16px $gothamBold;	
+				position: absolute;
+				bottom: 20%;
+				left: 8%;
+			}
+
+			#indicators-first {
+				display: none;
+			}
+			.carousel-control-first {
+				position: absolute;
+				top: 80%;
+				font-size: 30px;
+				color: #000;
+				opacity: 1;
+				background-image: none; 
+				outline: none;
+				width: 0;
+			}
+
+			.left-first {
+				left: 5%;
+			}
+
+			.right-first {
+				left: 15%;
+			}
+
+		}
+	}
+}
+
+@media(max-width: 767px) {
+
+	.third {
+		padding-top: 25px;
+		display: flex;
+		flex-direction: column;
+
+		&__image {
+			flex: 1;
+			justify-content: center;
+			display: flex;
+
+		}
+
+		#myCarousel-first {
+			flex: 1;
+			padding: 10px 10px 75px 10px;
+			text-align: center;
+
+			.counter {
+				bottom: 19%;
+				left: 9%;
+			}
+
+			.left-first {
+				left: 5%;
+			}
+
+			.right-first {
+				left: 15%;
+			}
+		}
+	}
+
+}
