@@ -1,17 +1,10 @@
 /* variables and fonts imports */
-@import '../sass/variables/_variables';
+@import '../sass/variables/variables';
 
 
 /* globals classes imports */
-@import '../sass/globals/_globals';
+@import '../sass/globals/globals';
 
 
 /* Main classes imports*/
-@import '../sass/_jumbotron';
-@import '../sass/_second';
-@import '../sass/_third';
-@import '../sass/_fourth';
-@import '../sass/_carousel';
-@import '../sass/_fifthy';
-@import '../sass/_seventh';
-@import '../sass/_footer';
+@import '../sass/sections/sections';
